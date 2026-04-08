@@ -1,2 +1,26 @@
-# MyPortfolio
-This repository contains the code and resources for my personal portfolio. It showcases my work in multimedia engineering, including projects in AR/VR, game development, 3D modeling, interactive experiences, and audiovisual production.
+# My Portfolio
+
+Welcome to my personal portfolio repository! This project showcases my work as a **Multimedia Engineer**, including various projects in:
+
+- **AR/VR Development**
+- **Game Development**
+- **3D Modeling and Texturing**
+- **Interactive Experiences**
+- **UX/UI DESING**
+- **Audiovisual Production**
+
+## Technologies Used
+
+- **Unity**
+- **Blender**
+- **Substance 3D Painter**
+- **Adobe Suite (Photoshop, Illustrator, Premiere Pro, After Effects)**
+- **C#**
+- **JavaScript**
+- **Phyton**
+- **HTML/CSS**
+- **Github Desktop**
+
+## Project Overview
+
+In this portfolio, you will find interactive and immersive projects that highlight my skills in multimedia design, game development, and XR (Extended Reality) technologies. Each project demonstrates my ability to blend creativity with technical skills to create engaging experiences.
