@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio of Santiago Mejía Suárez." />
+    <meta
+      name="description"
+      content="Personal portfolio of Santiago Mejía Suárez."
+    />
     <title>Santiago Mejía Suárez | Portfolio</title>
 
     <link
@@ -19,9 +22,117 @@
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
+    <!--
+      ACÁ ESTÁ TODO EL HEADER DEL PORTAFOLIO, INCLUYENDO EL LOGO, EL MENÚ DE NAVEGACIÓN, LOS ENLACES A REDES SOCIALES Y EL BOTÓN PARA DESCARGAR EL CV.
+      //-->
+    <header>
+      <nav>
+        <div class="header-nav-container">
+          <div class="header-logo">Mi Logo</div>
+
+          <div class="header-nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#about">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contacto</a>
+          </div>
+
+          <div class="header-social-links">
+            <a
+              href="https://www.linkedin.com/in/santiago-mejiasuarez/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            ><a
+              href="https://github.com/SantiagoMejia064"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+          <button class="header-btn-downloadCV">Descargar CV</button>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+      ACÁ ESTÁ EL CONTENIDO PRINCIPAL DEL PORTAFOLIO, INCLUYENDO SECCIONES COMO EL HERO, PROYECTOS, SOBRE MÍ, HABILIDADES, NEBULY Y CONTACTO.
+      //-->
     <main>
-      <!-- Portfolio content will be added here -->
+      <!--Sección Hero-->
+      <section id="hero" style="background: lightgray">
+        <h1>INGENIERO MULTIMEDIA</h1>
+        <p>
+          Hola, soy Santiago Mejía Suárez, un ingeniero multimedia apasionado
+          por la tecnología y el diseño.
+        </p>
+      </section>
+
+      <!--Sección Proyectos-->
+      <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve del proyecto 1.</p>
+        </div>
+        <div class="project">
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del proyecto 2.</p>
+        </div>
+      </section>
+
+      <!--Sección Sobre Mí-->
+      <section id="about" style="background: lightgray">
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy Santiago Mejía Suárez, un ingeniero multimedia con experiencia en
+          el desarrollo de soluciones digitales innovadoras.
+        </p>
+      </section>
+
+      <!--Sección Habilidades-->
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Desarrollo Web</li>
+          <li>Diseño Gráfico</li>
+          <li>Producción de Contenido</li>
+        </ul>
+      </section>
+
+      <!--Sección Contacto-->
+      <section id="contact" style="background: lightgray">
+        <h2>Contacto</h2>
+        <p>¡Contáctame!</p>
+      </section>
     </main>
+
+    <!--
+      ACÁ ESTÁ EL FOOTER DEL PORTAFOLIO, INCLUYENDO INFORMACIÓN DE COPYRIGHT, ENLACES A REDES SOCIALES, EMAIL Y UBICACIÓN.
+      //-->
+    <footer style="background: lightgreen">
+      <p>
+        Copyright &copy; 2023 Santiago Mejía Suárez. Todos los derechos
+        reservados.
+      </p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/santiago-mejiasuarez/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/SantiagoMejia064"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+      <p>Email: mejiasantiago0604@gmail.com</p>
+      <p>Ubicación: Cali, Colombia</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
