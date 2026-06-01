@@ -1,26 +1,55 @@
-# My Portfolio
+# Santiago Mejía Suárez | Personal Portfolio
 
-Welcome to my personal portfolio repository! This project showcases my work as a **Multimedia Engineer**, including various projects in:
+A clean static starter project for the personal portfolio of Santiago Mejía Suárez.
+The repository is intentionally minimal and ready for future design and content work.
 
-- **AR/VR Development**
-- **Game Development**
-- **3D Modeling and Texturing**
-- **Interactive Experiences**
-- **UX/UI DESING**
-- **Audiovisual Production**
+## Technologies
 
-## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- Vercel
 
-- **Unity**
-- **Blender**
-- **Substance 3D Painter**
-- **Adobe Suite (Photoshop, Illustrator, Premiere Pro, After Effects)**
-- **C#**
-- **JavaScript**
-- **Phyton**
-- **HTML/CSS**
-- **Github Desktop**
+## Folder Structure
 
-## Project Overview
+```text
+.
+|-- index.html
+|-- README.md
+|-- .gitignore
+|-- vercel.json
+|-- assets/
+|   |-- images/
+|   |   |-- profile/
+|   |   |-- projects/
+|   |   `-- icons/
+|   |-- videos/
+|   `-- documents/
+`-- src/
+    |-- css/
+    |-- js/
+    `-- data/
+```
 
-In this portfolio, you will find interactive and immersive projects that highlight my skills in multimedia design, game development, and XR (Extended Reality) technologies. Each project demonstrates my ability to blend creativity with technical skills to create engaging experiences.
+## Run Locally
+
+No install command or build step is required.
+
+1. Open this folder in VS Code.
+2. Open `index.html` with the Live Server extension.
+
+You can also open `index.html` directly in a browser for a basic preview.
+
+## Deploy to Vercel
+
+1. Push this repository to GitHub.
+2. Import the repository in Vercel.
+3. Set **Framework Preset** to **Other**.
+4. Leave **Build Command** empty.
+5. Leave **Output Directory** empty/default.
+6. Deploy.
+
+## Author
+
+Santiago Mejía Suárez
