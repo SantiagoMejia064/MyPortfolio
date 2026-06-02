@@ -1,5 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
 /* ---------------------- HEADER ---------------------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .header-nav-container {
+    background-color: var(--bg-primary-transparent);
+    color: var(--text-primary);
+    backdrop-filter: blur(5px);
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     justify-content: space-between;
@@ -9,7 +26,15 @@
 }
 
 .header-logo {
-    background-color: #010711;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    display: block;
+    height: 48px;
+    width: auto;
 }
 
 .header-nav-links {
@@ -19,10 +44,15 @@
 }
 
 .header-nav-links a {
-    color: #000000;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
+}
+
+.header-nav-links a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 2px var(--primary-hover);
 }
 
 .header-social-links {
@@ -32,21 +62,33 @@
 }
 
 .header-social-links a {
-    color: #000000;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
 }
 
+.header-social-links a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 2px var(--primary-hover);
+}
+
 .header-btn-downloadCV {
-    background-color: #0f3fc2;
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--white);
     border: none;
     padding: 10px 60px;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
+}
+
+.header-btn-downloadCV:hover {
+    background-color: var(--primary-hover);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2),
+        0 0 0 3px var(--bg-surface-2);
 }
 
 
