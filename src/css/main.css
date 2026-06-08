@@ -10,6 +10,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    padding: 10px;
     z-index: 1000;
 }
 
@@ -17,12 +18,20 @@ header {
     background-color: var(--bg-primary-transparent);
     color: var(--text-primary);
     backdrop-filter: blur(5px);
+    border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     gap: 50px;
+
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled .header-nav-container{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.35);
+    
 }
 
 .header-logo {
@@ -33,7 +42,7 @@ header {
 
 .header-logo img {
     display: block;
-    height: 48px;
+    height: 36px;
     width: auto;
 }
 
