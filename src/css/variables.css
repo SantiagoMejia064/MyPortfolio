@@ -1,42 +1,43 @@
 :root {
-  /* Fondos */
-  --bg-primary: #0B1120;
-  --bg-primary-transparent: #0B1120CC;
-  --bg-surface: #111827;
-  --bg-surface-2: #1E293B;
+    /* Fondos */
+    --bg-primary: #0B1120;
+    --bg-primary-transparent: #0B1120CC;
+    --bg-surface: #111827;
+    --bg-surface-2: #1E293B;
 
-  /* Azules */
-  --primary: #2563EB;
-  --primary-hover: #3B82F6;
+    /* Azules */
+    --primary: #2563EB;
+    --primary-transparent: #2563eb81;
+    --primary-hover: #3B82F6;
 
-  /* Secundario */
-  --secondary: #0F766E;
-  --secondary-transparent: #0f766d81;
+    /* Secundario */
+    --secondary: #0F766E;
+    --secondary-transparent: #0f766d81;
 
-  /* Texto */
-  --text-primary: #E5E7EB;
-  --text-secondary: #94A3B8;
-  --white: #FFFFFF;
+    /* Texto */
+    --text-primary: #E5E7EB;
+    --text-secondary: #94A3B8;
+    --white: #FFFFFF;
 
-  /* Bordes */
-  --border: #334155;
-  --accent-dark: #0D1B2A;
+    /* Bordes */
+    --border: #334155;
+    --accent-dark: #0D1B2A;
 
-  /* Extras */
-  --purple: #6366F1;
-  --cyan: #06B6D4;
-  --orange: #F59E0B;
+    /* Extras */
+    --purple: #6366F1;
+    --cyan: #06B6D4;
+    --orange: #F59E0B;
 
-  /* Gradientes */
-  --gradient-primary: linear-gradient(135deg,
-      #0B1120,
-      #2563EB);
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg,
+            #0B1120,
+            #2563EB);
 
-  --gradient-secondary: linear-gradient(135deg,
-      #111827,
-      #0F766E);
+    --gradient-secondary: linear-gradient(135deg,
+            #111827,
+            #0F766E);
 
-  --gradient-premium: linear-gradient(135deg,
-      #0D1B2A,
-      #3B82F6);
+    --gradient-premium: linear-gradient(135deg,
+            #0D1B2A,
+            #3B82F6);
 }
