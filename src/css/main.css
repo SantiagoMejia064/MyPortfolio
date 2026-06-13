@@ -6,14 +6,20 @@ body {
     color: var(--text-primary);
 }
 
-h1,
-h2,
-h3 {
+h1 {
     font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 5.5vw;
 }
 
 h2 {
-    font-size: 36px;
+    font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 88px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Stack Sans Notch', sans-serif;
+    font-size: 3vw;
     font-weight: 500;
 }
 
@@ -153,8 +159,11 @@ header.scrolled .header-nav-container {
 }
 
 .hero-container h1 {
-    font-size: 96px;
+    padding: 1vh 0;
     line-height: 1.2;
+}
+.hero-container h3 {
+    padding: 1vh 0;
 }
 
 .hero-container h3 {
@@ -163,7 +172,7 @@ header.scrolled .header-nav-container {
 }
 
 .hero-container p {
-    font-size: 18px;
+    font-size: 1.5vw;
     line-height: 1.6;
     margin: 20px 0;
 }
@@ -268,10 +277,21 @@ header.scrolled .header-nav-container {
 }
 
 .projects-carousel {
-    padding-top: 30px;
+    padding-top: 50px;
     width: 50%;
     margin: 0 auto;
     min-height: 540px;
+
+}
+
+.projects-carousel:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.carousel-inner {
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px var(--primary);
 }
 
 .carousel-caption {
@@ -279,6 +299,12 @@ header.scrolled .header-nav-container {
     backdrop-filter: blur(5px);
     padding: 20px;
     border-radius: 10px;
+}
+
+.d-block {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 /* ---------------------- SOBRE MI ---------------------- */
