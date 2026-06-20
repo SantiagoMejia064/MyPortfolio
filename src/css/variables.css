@@ -1,43 +1,39 @@
 :root {
-    /* Fondos */
-    --bg-primary: #0B1120;
-    --bg-primary-transparent: #0B1120CC;
-    --bg-surface: #111827;
-    --bg-surface-2: #1E293B;
+        /* Fondos */
+        --bg-primary: #0b1120;
+        --bg-primary-transparent: #0b1120cc;
+        --bg-surface: #111827;
+        --bg-surface-2: #1e293b;
 
-    /* Azules */
-    --primary: #2563EB;
-    --primary-transparent: #2563eb81;
-    --primary-hover: #3B82F6;
+        /* Azules */
+        --primary: #2563eb;
+        --primary-transparent: #2563eb81;
+        --primary-hover: #3b82f6;
 
-    /* Secundario */
-    --secondary: #0e726a;
-    --secondary-transparent: #0f766d81;
+        /* Secundario */
+        --secondary: #0e726a;
+        --secondary-transparent: #0f766d81;
 
-    /* Texto */
-    --text-primary: #E5E7EB;
-    --text-secondary: #94A3B8;
-    --white: #FFFFFF;
+        /* Texto */
+        --text-primary: #e5e7eb;
+        --text-secondary: #94a3b8;
+        --white: #ffffff;
 
-    /* Bordes */
-    --border: #334155;
-    --accent-dark: #0D1B2A;
+        /* Bordes */
+        --border: #334155;
+        --accent-dark: #0d1b2a;
 
-    /* Extras */
-    --purple: #6366F1;
-    --cyan: #06B6D4;
-    --orange: #F59E0B;
+        /* Extras */
+        --purple: #6366f1;
+        --cyan: #06b6d4;
+        --orange: #f59e0b;
 
-    /* Gradientes */
-    --gradient-primary: linear-gradient(135deg,
-            #0B1120,
-            #2563EB);
+        /* Gradientes */
+        --gradient-primary: linear-gradient(135deg, #0b1120, #2563eb);
 
-    --gradient-secondary: linear-gradient(135deg,
-            #111827,
-            #0F766E);
+        --gradient-secondary: linear-gradient(135deg, #111827, #0f766e);
 
-    --gradient-premium: linear-gradient(135deg,
-            #0D1B2A,
-            #3B82F6);
+        --gradient-premium: linear-gradient(135deg, #0d1b2a, #3b82f6);
+
+        --gradient-primary-radial: radial-gradient(ellipse , #2563eb 10%, #0b1120 70%);
 }

@@ -1,30 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
 }
 
 h1 {
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     font-size: 5.5vw;
 }
 
 h2 {
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     font-size: 88px;
     font-weight: 500;
 }
 
 h3 {
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     font-size: 3vw;
     font-weight: 500;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -48,14 +48,16 @@ header {
     padding: 20px;
     gap: 50px;
 
-    transition: background-color 2s ease, box-shadow 0.3s ease, border-radius 2s ease;
+    transition:
+        background-color 2s ease,
+        box-shadow 0.3s ease,
+        border-radius 2s ease;
 }
 
 header.scrolled .header-nav-container {
     background-color: var(--bg-primary-transparent);
     box-shadow: 0 8px 10px #2564eb2f;
     border-radius: 50px;
-
 }
 
 .header-logo {
@@ -115,7 +117,7 @@ header.scrolled .header-nav-container {
     align-items: center;
     background-color: var(--primary);
     color: var(--white);
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     border: none;
     padding: 10px 80px;
     font-size: 16px;
@@ -124,7 +126,9 @@ header.scrolled .header-nav-container {
     cursor: pointer;
     text-decoration: none;
     border-radius: 30px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .dropdown-toggle:hover {
@@ -149,9 +153,10 @@ header.scrolled .header-nav-container {
 .dropdown-item {
     color: var(--white);
     font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
-
 
 /* --------------------------------------------------- HERO --------------------------------------------------- */
 
@@ -194,7 +199,7 @@ header.scrolled .header-nav-container {
 
 .btn-contacto {
     background-color: var(--secondary);
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     color: var(--white);
     border: none;
     padding: 15px 60px;
@@ -206,13 +211,14 @@ header.scrolled .header-nav-container {
     cursor: pointer;
     text-decoration: none;
     border-radius: 30px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .btn-contacto:hover {
     background-color: var(--secondary-transparent);
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.2),
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-image {
@@ -288,7 +294,6 @@ header.scrolled .header-nav-container {
     width: 50%;
     margin: 0 auto;
     min-height: 540px;
-
 }
 
 .projects-carousel:hover {
@@ -327,7 +332,7 @@ header.scrolled .header-nav-container {
 /* --------------------------------------------------- HABILIDADES --------------------------------------------------- */
 
 #skills {
-    padding: 50px 25px;
+    padding: 100px 25px;
 }
 
 #skills h2 {
@@ -335,18 +340,17 @@ header.scrolled .header-nav-container {
 }
 
 .skills-orbit {
+    background-image: var(--gradient-primary-radial);
     display: grid;
 
-    grid-template-columns:
-        1fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
 
-    grid-template-rows:
-        150px flex flex 150px;
+    grid-template-rows: 150px flex flex 150px;
 
     align-items: center;
     justify-items: center;
 
-    margin-top: 50px;
+    padding: 70px 0;
 }
 
 .skill-center {
@@ -358,12 +362,11 @@ header.scrolled .header-nav-container {
 
     border-radius: 50%;
 
-    background: rgba(17, 24, 39, .8);
+    background: rgba(17, 24, 39, 0.8);
 
     border: 2px solid var(--primary);
 
-    box-shadow:
-        0 0 20px var(--primary);
+    box-shadow: 0 0 20px var(--primary);
 
     display: flex;
     flex-direction: column;
@@ -371,12 +374,12 @@ header.scrolled .header-nav-container {
     align-items: center;
 }
 
-.UX {
+.Diseno {
     grid-column: 2;
     grid-row: 2;
 }
 
-.Diseño {
+.Contenido {
     grid-column: 4;
     grid-row: 2;
 }
@@ -386,7 +389,7 @@ header.scrolled .header-nav-container {
     grid-row: 3;
 }
 
-.Programación {
+.WEB {
     grid-column: 4;
     grid-row: 3;
 }
@@ -396,7 +399,7 @@ header.scrolled .header-nav-container {
     grid-row: 1;
 }
 
-.Gestión {
+.Herramientas {
     grid-column: 3;
     grid-row: 4;
 }
@@ -408,31 +411,65 @@ header.scrolled .header-nav-container {
     margin: 20px;
 
     border-radius: 25px;
-    background: rgba(255, 255, 255, .03);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .1);
-    transition: .3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
     min-height: 100px;
 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 25px var(--bg-primary), 0 0 0px var(--bg-primary) inset;
+
+    transition: box-shadow 1.5 ease;
 }
 
 .skill-node:hover {
 
-    transform:
-        translateY(-10px) scale(1.05);
-
-    box-shadow:
-        0 0 25px var(--primary);
+    box-shadow: 0 0 0px var(--bg-primary), 0 0 25px var(--bg-primary) inset;
 }
 
+.Diseno:hover {
+    transform: translateX(10px) scale(0.95);
+}
 
+.Contenido:hover {
+    transform: translateX(10px) scale(0.95);
+}
 
+.Desarrollo:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.WEB:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.BD:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.Herramientas:hover {
+    transform: translateX(10px) scale(0.95);
+}
+
+.icons {
+    display: grid;
+
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
 
 /* --------------------------------------------------- CONTACTO --------------------------------------------------- */
 
 #contact {
     padding: 50px 25px;
-
 }
 
 #contact h2 {
@@ -440,13 +477,14 @@ header.scrolled .header-nav-container {
 }
 
 .contact-container {
-    border-width: .25vw;
+    border-width: 0.25vw;
     border-style: solid;
     border-color: var(--secondary);
     border-radius: 15px;
 
-    box-shadow: 10px 10px 100px var(--secondary) inset, -10px -10px 100px var(--secondary) inset;
-    ;
+    box-shadow:
+        10px 10px 100px var(--secondary) inset,
+        -10px -10px 100px var(--secondary) inset;
     padding: 50px;
     color: var(--white);
 
@@ -465,13 +503,15 @@ header.scrolled .header-nav-container {
     border-color: var(--orange);
     border-radius: 25px;
 
-    box-shadow: 8px 8px 15px var(--orange) inset, -8px -8px 15px var(--orange) inset;
+    box-shadow:
+        8px 8px 15px var(--orange) inset,
+        -8px -8px 15px var(--orange) inset;
 
     margin: 50px 0px;
     padding: 30px 250px;
 
     text-decoration: none;
-    font-family: 'Stack Sans Notch', sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     font-size: 1.5vw;
     font-weight: 500;
 
@@ -481,13 +521,16 @@ header.scrolled .header-nav-container {
 }
 
 .btn-writeme:hover {
-    box-shadow: 1px 1px 5px var(--orange) inset, -1px -1px 5px var(--orange) inset, 2px 2px 10px var(--orange), -2px -2px 10px var(--orange);
+    box-shadow:
+        1px 1px 5px var(--orange) inset,
+        -1px -1px 5px var(--orange) inset,
+        2px 2px 10px var(--orange),
+        -2px -2px 10px var(--orange);
 }
 
 .contact-cards-panel {
     display: flex;
     justify-content: center;
-
 }
 
 .contact-card {
@@ -528,7 +571,7 @@ header.scrolled .header-nav-container {
 }
 
 .resalt-text {
-    color: var(--orange)
+    color: var(--orange);
 }
 
 /* ---------------------- FOOTER ---------------------- */
