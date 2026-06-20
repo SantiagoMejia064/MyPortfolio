@@ -364,9 +364,7 @@ header.scrolled .header-nav-container {
 
     background: rgba(17, 24, 39, 0.8);
 
-    border: 2px solid var(--primary);
-
-    box-shadow: 0 0 20px var(--primary);
+    box-shadow: 0 0 50px var(--white);
 
     display: flex;
     flex-direction: column;
@@ -405,17 +403,18 @@ header.scrolled .header-nav-container {
 }
 
 .skill-node {
-    width: 220px;
+    width: 330px;
+    min-height: 170px;
 
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: 0.3s;
-    min-height: 100px;
+
 
     justify-content: center;
     align-items: center;
@@ -423,6 +422,14 @@ header.scrolled .header-nav-container {
     box-shadow: 0 0 25px var(--bg-primary), 0 0 0px var(--bg-primary) inset;
 
     transition: box-shadow 1.5 ease;
+
+    font-size: .7vw;
+    font-style: italic;
+}
+
+.skill-node h4 {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 1vw;
 }
 
 .skill-node:hover {
@@ -431,34 +438,36 @@ header.scrolled .header-nav-container {
 }
 
 .Diseno:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateX(20px) scale(0.95);
 }
 
 .Contenido:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateX(-20px) scale(0.95);
 }
 
 .Desarrollo:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateX(20px) scale(0.95);
 }
 
 .WEB:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateX(-20px) scale(0.95);
 }
 
 .BD:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateY(20px) scale(0.95);
 }
 
 .Herramientas:hover {
-    transform: translateX(10px) scale(0.95);
+    transform: translateY(-20px) scale(0.95);
 }
 
 .icons {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .icon {
