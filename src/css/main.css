@@ -4,22 +4,23 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
+    overflow-x: clip;
 }
 
 h1 {
     font-family: "Stack Sans Notch", sans-serif;
-    font-size: 5.5vw;
+    font-size: clamp(2.8rem, 5.5vw, 6.8rem);
 }
 
 h2 {
     font-family: "Stack Sans Notch", sans-serif;
-    font-size: 88px;
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
     font-weight: 500;
 }
 
 h3 {
     font-family: "Stack Sans Notch", sans-serif;
-    font-size: 3vw;
+    font-size: clamp(1.6rem, 3vw, 3.6rem);
     font-weight: 500;
 }
 
@@ -42,11 +43,12 @@ header {
     backdrop-filter: blur(5px);
     border-radius: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr;
+    position: relative;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    gap: 50px;
+    padding: clamp(12px, 1.5vw, 20px);
+    gap: clamp(16px, 2.6vw, 50px);
 
     transition:
         background-color 2s ease,
@@ -68,7 +70,7 @@ header.scrolled .header-nav-container {
 
 .header-logo img {
     display: block;
-    width: 100%;
+    width: clamp(70px, 7vw, 100px);
     max-width: 100px;
     /* o el tamaño que quieras */
     min-width: 70px;
@@ -87,7 +89,7 @@ header.scrolled .header-nav-container {
 
 .header-nav-links {
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.4vw, 20px);
     justify-content: flex-start;
     list-style: none;
 }
@@ -104,9 +106,13 @@ header.scrolled .header-nav-container {
     text-shadow: 0 0 2px var(--primary-hover);
 }
 
+.header-mobile-social-link {
+    display: none;
+}
+
 .header-social-links {
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 1.4vw, 20px);
     justify-content: flex-end;
 
     list-style: none;
@@ -131,7 +137,7 @@ header.scrolled .header-nav-container {
     color: var(--white);
     font-family: "Stack Sans Notch", sans-serif;
     border: none;
-    padding: 10px 80px;
+    padding: 10px clamp(18px, 4vw, 80px);
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -175,10 +181,10 @@ header.scrolled .header-nav-container {
 .hero-container {
     display: grid;
     min-height: 70vh;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
     align-items: center;
-    gap: 50px;
-    padding: 0px 25px;
+    gap: clamp(24px, 4vw, 50px);
+    padding: 0 25px;
 }
 
 .hero-container h1 {
@@ -196,7 +202,7 @@ header.scrolled .header-nav-container {
 }
 
 .hero-container p {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     line-height: 1.6;
     margin: 20px 0;
 }
@@ -303,9 +309,9 @@ header.scrolled .header-nav-container {
 
 .projects-carousel {
     padding-top: 50px;
-    width: 50%;
+    width: min(900px, 90vw);
     margin: 0 auto;
-    min-height: 540px;
+    min-height: clamp(320px, 45vw, 540px);
 }
 
 .projects-carousel:hover {
@@ -327,7 +333,7 @@ header.scrolled .header-nav-container {
 
 .d-block {
     width: 100%;
-    height: 500px;
+    height: clamp(280px, 42vw, 500px);
     object-fit: cover;
 }
 
@@ -357,15 +363,25 @@ header.scrolled .header-nav-container {
 .about-cards {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
 
     justify-content: center;
+    align-items: flex-start;
     text-align: center;
 
     color: var(--text-primary);
     gap: 50px;
 }
 
+.about-cards>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(18rem, 100%);
+}
+
 .about-cards h4 {
+    width: 100%;
     padding: 20px 0;
 
     background-color: var(--bg-primary);
@@ -382,10 +398,13 @@ header.scrolled .header-nav-container {
     box-shadow: 0 0 35px var(--primary);
 }
 
+
 .card {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     padding: 20px;
+    width: min(18rem, 100%) !important;
+    min-height: 330px;
 
     box-shadow: 0 0 15px var(--bg-primary);
     border-width: 0;
@@ -417,9 +436,9 @@ header.scrolled .header-nav-container {
     background-image: var(--gradient-primary-radial);
     display: grid;
 
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: minmax(0, 1fr) repeat(3, minmax(0, 3fr)) minmax(0, 1fr);
 
-    grid-template-rows: 150px flex flex 150px;
+    grid-template-rows: 150px auto auto 150px;
 
     align-items: center;
     justify-items: center;
@@ -477,7 +496,7 @@ header.scrolled .header-nav-container {
 }
 
 .skill-node {
-    width: 330px;
+    width: min(330px, 100%);
     min-height: 170px;
 
     padding: 20px;
@@ -497,12 +516,12 @@ header.scrolled .header-nav-container {
 
     transition: box-shadow 1.5 ease;
 
-    font-size: .7vw;
+    font-size: clamp(0.85rem, 0.7vw, 1rem);
 }
 
 .skill-node h4 {
     font-family: "Stack Sans Notch", sans-serif;
-    font-size: 1vw;
+    font-size: clamp(1rem, 1vw, 1.25rem);
 }
 
 .skill-node:hover {
@@ -567,10 +586,11 @@ header.scrolled .header-nav-container {
     box-shadow:
         10px 10px 100px var(--secondary) inset,
         -10px -10px 100px var(--secondary) inset;
-    padding: 50px;
+    padding: clamp(24px, 4vw, 50px);
     color: var(--white);
 
-    max-width: 80vw;
+    width: min(1200px, calc(100vw - 50px));
+    max-width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -589,12 +609,13 @@ header.scrolled .header-nav-container {
         8px 8px 15px var(--orange) inset,
         -8px -8px 15px var(--orange) inset;
 
-    margin: 50px 0px;
-    padding: 30px 250px;
+    max-width: 100%;
+    margin: clamp(28px, 4vw, 50px) 0;
+    padding: clamp(18px, 3vw, 30px) clamp(36px, 15vw, 250px);
 
     text-decoration: none;
     font-family: "Stack Sans Notch", sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: 500;
 
     color: var(--text-primary);
@@ -613,14 +634,19 @@ header.scrolled .header-nav-container {
 .contact-cards-panel {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-cards-panel>div {
+    width: min(400px, 100%);
 }
 
 .contact-card {
     display: flex;
-    margin: 10px 20px;
+    margin: 10px clamp(8px, 1.5vw, 20px);
     padding: 20px;
     min-height: 100px;
-    min-width: 400px;
+    width: 100%;
     text-align: center;
     backdrop-filter: blur(25px);
 
@@ -652,6 +678,10 @@ header.scrolled .header-nav-container {
     text-align: start;
 }
 
+.info-contact-card p {
+    overflow-wrap: anywhere;
+}
+
 .resalt-text {
     color: var(--orange);
 }
@@ -669,14 +699,54 @@ footer {
 
 /* -------------------------------------------- RESPONSIVE --------------------------------------------  */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .header-nav-container {
+        grid-template-columns: auto minmax(0, 1fr) auto auto;
+    }
+
+    .header-social-links {
+        display: none;
+    }
+
+    .skills-orbit {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .Diseno,
+    .Desarrollo {
+        grid-column: 1;
+    }
+
+    .skill-center,
+    .BD,
+    .Herramientas {
+        grid-column: 2;
+    }
+
+    .Contenido,
+    .WEB {
+        grid-column: 3;
+    }
+
+    .skill-node {
+        width: min(300px, 100%);
+    }
+}
+
+@media (max-width: 992px) {
     .menu-btn {
         display: block;
     }
 
-    .header-nav-links{
-        position: fixed;
-        top: 60px;
+    .header-nav-container {
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+
+    .header-nav-links {
+        position: absolute;
+        top: calc(100% + 8px);
         left: 0;
         width: 100%;
         flex-direction: column;
@@ -685,28 +755,242 @@ footer {
         clip-path: circle(0px at 90% -10%);
         pointer-events: none;
         background-color: var(--bg-surface-2);
+        border-radius: 20px;
+        z-index: 1001;
     }
 
-    .header-nav-links.active{
+    .header-nav-links.active {
         clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }
 
-    .header-nav-links li{
+    .header-nav-links li {
         opacity: 0;
         transform: translateY(20px);
-
         transition: transform 0.3s ease;
     }
 
-    .header-nav-links.active li{
+    .header-nav-links.active li {
         opacity: 1;
         transform: translateY(0px);
     }
 
-    .header-nav-links li:nth-child(1) {transition-delay: 0.1s;}
-    .header-nav-links li:nth-child(2) {transition-delay: 0.2s;}
-    .header-nav-links li:nth-child(3) {transition-delay: 0.3s;}
-    .header-nav-links li:nth-child(4) {transition-delay: 0.4s;}
-    .header-nav-links li:nth-child(5) {transition-delay: 0.5s;}
+    .header-nav-links li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .header-nav-links li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .header-nav-links li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .header-nav-links li:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .header-nav-links li:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+
+    .header-nav-links li:nth-child(6) {
+        transition-delay: 0.6s;
+    }
+
+    .header-nav-links li:nth-child(7) {
+        transition-delay: 0.7s;
+    }
+
+    .header-mobile-social-link {
+        display: block;
+        width: min(240px, calc(100% - 32px));
+    }
+
+    .header-mobile-social-link a {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        background-color: var(--secondary);
+        border-radius: 30px;
+        color: var(--white);
+        text-align: center;
+    }
+
+    .header-mobile-social-link a:hover {
+        color: var(--white);
+        background-color: var(--secondary-transparent);
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-image {
+        justify-self: center;
+        align-self: center;
+        max-width: 520px;
+    }
+
+    .projects-carousel {
+        width: min(760px, 92vw);
+    }
+
+    .skills-orbit {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+        padding: 50px 20px;
+    }
+
+    .Diseno,
+    .Contenido,
+    .Desarrollo,
+    .WEB,
+    .BD,
+    .Herramientas,
+    .skill-center {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .skill-center {
+        grid-column: 1 / -1;
+        order: -1;
+        width: 220px;
+        height: 220px;
+    }
+
+    .skill-node {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 8px;
+    }
+
+    .dropdown-toggle {
+        padding-inline: 16px;
+    }
+
+    .hero-container h3 {
+        margin-top: -10px;
+    }
+
+    .card-hero {
+        width: 68px;
+        height: 68px;
+        padding: 16px;
+    }
+
+    .projects-carousel:hover,
+    .card:hover,
+    .about-cards h4:hover,
+    .contact-card:hover {
+        transform: none;
+    }
+
+    .about-info {
+        text-align: left;
+    }
+
+    .skills-orbit {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-center {
+        grid-column: auto;
+    }
+
+    .Diseno:hover,
+    .Contenido:hover,
+    .Desarrollo:hover,
+    .WEB:hover,
+    .BD:hover,
+    .Herramientas:hover {
+        transform: none;
+    }
+
+    .contact-card {
+        margin-inline: 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #projects,
+    #about,
+    #contact {
+        padding-inline: 16px;
+    }
+
+    #skills {
+        padding: 70px 16px;
+    }
+
+    .header-logo img {
+        min-width: 58px;
+        width: 58px;
+    }
+
+    .dropdown-toggle img {
+        display: none;
+    }
+
+    .hero-container {
+        padding-inline: 16px;
+    }
+
+    .btn-contacto {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .projects-carousel {
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .d-block {
+        height: 260px;
+    }
+
+    .about-cards {
+        gap: 28px;
+    }
+
+    .skill-center {
+        width: 190px;
+        height: 190px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .btn-writeme {
+        width: 100%;
+        padding-inline: 24px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+    }
+
+    .info-contact-card {
+        text-align: center;
+    }
 }
