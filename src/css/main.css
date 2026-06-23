@@ -654,15 +654,18 @@ header.scrolled .header-nav-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .contact-cards-panel>div {
-    width: min(400px, 100%);
+    flex: 1 1 calc((100% - 40px) / 3);
+    max-width: 400px;
+    min-width: 0;
 }
 
 .contact-card {
     display: flex;
-    margin: 10px clamp(8px, 1.5vw, 20px);
+    margin: 0;
     padding: 20px;
     min-height: 100px;
     width: 100%;
@@ -889,6 +892,10 @@ footer {
 
     .skill-node {
         width: 100%;
+    }
+
+    .contact-cards-panel>div {
+        flex-basis: min(400px, 100%);
     }
 }
 

@@ -1,16 +1,88 @@
 {
-    "header":{
-        "hero" : "Hero",
-        "projects" : "Projects",
-        "about" : "About me",
-        "skills" : "Skills",
-        "contact" : "Contact"
+    "header": {
+        "hero": "Home",
+        "projects": "Projects",
+        "about": "About me",
+        "skills": "Skills",
+        "contact": "Contact",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "cv": "CV",
+        "spanishCv": "Spanish CV",
+        "englishCv": "English CV"
     },
 
-    "hero":{
+    "hero": {
         "title": "MULTIMEDIA ENGINEER",
         "name": "Santiago Mejía Suárez",
         "text": "Hi, I'm Santiago Mejía Suárez, a multimedia engineer who is passionate about technology and design.",
         "button": "Contact"
+    },
+
+    "projects": {
+        "title": "Featured Projects",
+        "caficultorTitle": "Caficultor VR",
+        "caficultorText": "An educational virtual reality experience for Meta Quest that teaches the coffee process through immersive interactions in Unity.",
+        "bankTitle": "Banco de Occidente Clone",
+        "bankText": "Web application with user authentication, secure registration, and session management using Node.js, MySQL, and bcrypt.",
+        "modelTitle": "Realistic 3D Model",
+        "modelText": "Modeling, texturing, and rendering of a realistic gaming PC using Blender, Substance 3D Painter, and Cycles.",
+        "fantaTitle": "Fanta Blast",
+        "fantaText": "Branding project that included visual identity creation, graphic pieces, and an advertising spot for a conceptual brand.",
+        "residentTitle": "Resident Evil",
+        "residentText": "A 3D video game inspired by Resident Evil with enemy AI, puzzles, and classic mechanics developed in Unity.",
+        "molassaultTitle": "Mollasault and web site",
+        "molassaultText": "Narrative video game and logbook-style web platform developed at Nebuly Studios with Unity, web development, and AI tools.",
+        "previous": "Previous",
+        "next": "Next"
+    },
+
+    "about": {
+        "title": "About Me",
+        "text": "Passionate about developing interactive digital experiences, with a focus on XR technologies (Augmented, Virtual, and Mixed Reality), interactive design, and video game development. I have worked on virtual reality, web development, video game, and multimedia production projects, combining creativity and technology to create innovative solutions.<br><br>I have experience developing applications in Unity, designing UI/UX interfaces with Figma, 3D modeling and animation, web development, and using the Adobe suite. I focus on building immersive user-centered experiences, prioritizing usability, aesthetics, and functionality.",
+        "educationTitle": "🎓 Education",
+        "educationText": "Universidad Autónoma de Occidente<br>Multimedia Engineering<br>2023 - Present",
+        "experienceTitle": "💼 Experience",
+        "experienceText": "Nebuly Studios<br>XR Development<br>Video Games<br>Web Development",
+        "interestsTitle": "🚀 Interests",
+        "interestsText": "Virtual Reality<br>Video Games<br>UX/UI<br>Artificial Intelligence<br>Web Development"
+    },
+
+    "skills": {
+        "title": "Skills",
+        "designTitle": "Design - UX/UI",
+        "designText": "Wireframes · Journey Maps · Usability · Design Thinking",
+        "contentTitle": "Multimedia Content",
+        "contentText": "Video Editing · Motion Graphics · Storytelling · Visual Branding",
+        "interactiveTitle": "XR & Interactive Development",
+        "interactiveText": "VR · AR · XR Toolkit · Game Development",
+        "webTitle": "Web Development",
+        "webText": "Frontend · Responsive Design · Node.js",
+        "backendTitle": "Databases & Backend",
+        "backendText": "CRUD · Authentication · Data Modeling",
+        "toolsTitle": "Tools & Collaboration",
+        "toolsText": "Git · Scrum · Notion · Collaborative Work",
+        "centerName": "Santiago",
+        "centerRole": "Multimedia Engineer"
+    },
+
+    "contact": {
+        "title": "Contact",
+        "text": "Multimedia engineer passionate about creating disruptive, functional, and memorable digital experiences. <br>I am ready to transform <span class=\"resalt-text\">ideas</span> into <span class=\"resalt-text\">real products</span>",
+        "button": "Write me",
+        "emailTitle": "Email",
+        "emailText": "mejiasantiago0604@gmail.com",
+        "whatsappTitle": "WhatsApp",
+        "whatsappText": "+57 333 2403 407",
+        "linkedinTitle": "LinkedIn",
+        "linkedinText": "Santiago Mejía"
+    },
+
+    "footer": {
+        "copyright": "2023 Santiago Mejía Suárez. All rights reserved.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "email": "Email: mejiasantiago0604@gmail.com",
+        "location": "Location: Cali, Colombia"
     }
 }

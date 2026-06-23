@@ -1,16 +1,88 @@
 {
-    "header":{
-        "hero" : "Inicio",
-        "projects" : "Proyectos",
-        "about" : "Sobre Mí",
-        "skills" : "Habilidades",
-        "contact" : "Contacto"
+    "header": {
+        "hero": "Inicio",
+        "projects": "Proyectos",
+        "about": "Sobre Mí",
+        "skills": "Habilidades",
+        "contact": "Contacto",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "cv": "CV",
+        "spanishCv": "CV en español",
+        "englishCv": "English CV"
     },
 
-    "hero":{
+    "hero": {
         "title": "INGENIERO MULTIMEDIA",
         "name": "Santiago Mejía Suárez",
         "text": "Hola, soy Santiago Mejía Suárez, un ingeniero multimedia apasionado por la tecnología y el diseño.",
         "button": "Contacto"
+    },
+
+    "projects": {
+        "title": "Proyectos Destacados",
+        "caficultorTitle": "Caficultor VR",
+        "caficultorText": "Experiencia educativa en realidad virtual para Meta Quest que enseña el proceso del café mediante interacciones inmersivas en Unity.",
+        "bankTitle": "Copia Banco de Occidente",
+        "bankText": "Aplicación web con autenticación de usuarios, registro seguro y gestión de sesiones utilizando Node.js, MySQL y bcrypt.",
+        "modelTitle": "Modelo 3D Realista",
+        "modelText": "Modelado, texturización y renderizado de una PC gamer realista utilizando Blender, Substance 3D Painter y Cycles.",
+        "fantaTitle": "Fanta Blast",
+        "fantaText": "Proyecto de branding que incluyó la creación de identidad visual, piezas gráficas y un spot publicitario para una marca conceptual.",
+        "residentTitle": "Resident Evil",
+        "residentText": "Videojuego 3D inspirado en Resident Evil con IA de enemigos, puzzles y mecánicas clásicas desarrollado en Unity.",
+        "molassaultTitle": "Mollasault and web site",
+        "molassaultText": "Videojuego narrativo y plataforma web tipo bitácora desarrollados en Nebuly Studios con Unity, desarrollo web y herramientas de IA.",
+        "previous": "Anterior",
+        "next": "Siguiente"
+    },
+
+    "about": {
+        "title": "Sobre Mí",
+        "text": "Apasionado por el desarrollo de experiencias digitales interactivas, con enfoque en tecnologías XR (Realidad Aumentada, Virtual y Mixta), diseño interactivo y desarrollo de videojuegos. He trabajado en proyectos de realidad virtual, desarrollo web, desarrollo de videojuegos y producción multimedia, combinando creatividad y tecnología para crear soluciones innovadoras.<br><br>Tengo experiencia en el desarrollo de aplicaciones en Unity, diseño de interfaces UI/UX con Figma, modelado y animación 3D, desarrollo web y uso de la suite Adobe. Me enfoco en construir experiencias inmersivas centradas en el usuario, priorizando la usabilidad, la estética y la funcionalidad.",
+        "educationTitle": "🎓 Educación",
+        "educationText": "Universidad Autónoma de Occidente<br>Ingeniería Multimedia<br>2023 - Actualidad",
+        "experienceTitle": "💼 Experiencia",
+        "experienceText": "Nebuly Studios<br>Desarrollo XR<br>Videojuegos<br>Desarrollo Web",
+        "interestsTitle": "🚀 Intereses",
+        "interestsText": "Realidad Virtual<br>Videojuegos<br>UX/UI<br>Inteligencia Artificial<br>Desarrollo Web"
+    },
+
+    "skills": {
+        "title": "Habilidades",
+        "designTitle": "Diseño - UX/UI",
+        "designText": "Wireframes · Journey Maps · Usabilidad · Design Thinking",
+        "contentTitle": "Contenido Multimedia",
+        "contentText": "Edición de Video · Motion Graphics · Storytelling · Branding Visual",
+        "interactiveTitle": "XR & Desarrollo Interactivo",
+        "interactiveText": "VR · AR · XR Toolkit · Game Development",
+        "webTitle": "Desarrollo Web",
+        "webText": "Frontend · Responsive Design · Node.js",
+        "backendTitle": "Bases de Datos & Backend",
+        "backendText": "CRUD · Autenticación · Modelado de Datos",
+        "toolsTitle": "Herramientas & Colaboración",
+        "toolsText": "Git · Scrum · Notion · Trabajo Colaborativo",
+        "centerName": "Santiago",
+        "centerRole": "Ingeniero Multimedia"
+    },
+
+    "contact": {
+        "title": "Contacto",
+        "text": "Ingeniero multimedia apasionado por crear experiencias digitales disruptivas, funcionales y memorables. <br>Estoy listo para transformar <span class=\"resalt-text\">ideas</span> en <span class=\"resalt-text\">productos reales</span>",
+        "button": "Escríbeme",
+        "emailTitle": "Correo",
+        "emailText": "mejiasantiago0604@gmail.com",
+        "whatsappTitle": "WhatsApp",
+        "whatsappText": "+57 333 2403 407",
+        "linkedinTitle": "LinkedIn",
+        "linkedinText": "Santiago Mejía"
+    },
+
+    "footer": {
+        "copyright": "Santiago Mejía Suárez. Todos los derechos reservados.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "email": "Email: mejiasantiago0604@gmail.com",
+        "location": "Ubicación: Cali, Colombia"
     }
 }

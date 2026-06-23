@@ -54,15 +54,16 @@
           <li><a href="#skills" data-section="header" data-value="skills">Habilidades</a></li>
           <li><a href="#contact" data-section="header" data-value="contact">Contacto</a></li>
           <li class="header-mobile-social-link"><a href="https://www.linkedin.com/in/santiago-mejiasuarez/"
-              target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              target="_blank" rel="noopener noreferrer" data-section="header" data-value="linkedin">LinkedIn</a></li>
           <li class="header-mobile-social-link"><a href="https://github.com/SantiagoMejia064" target="_blank"
-              rel="noopener noreferrer">GitHub</a></li>
+              rel="noopener noreferrer" data-section="header" data-value="github">GitHub</a></li>
         </ul>
 
         <ul class="header-social-links">
           <li><a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank"
-              rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              rel="noopener noreferrer" data-section="header" data-value="linkedin">LinkedIn</a></li>
+          <li><a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer"
+              data-section="header" data-value="github">GitHub</a></li>
         </ul>
         <!--
           <a
@@ -82,17 +83,19 @@
           <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             <img src="./assets/images/icons/documentoIcono.png" alt="Documento" />
-            CV
+            <span data-section="header" data-value="cv">CV</span>
           </a>
 
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" href="./assets/documents/HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf"
-                download="HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf">CV en español</a>
+                download="HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf" data-section="header"
+                data-value="spanishCv">CV en español</a>
             </li>
             <li>
               <a class="dropdown-item" href="./assets/documents/Resume-Santiago_Mejia_Suarez.pdf"
-                download="Resume-Santiago_Mejia_Suarez.pdf">English CV</a>
+                download="Resume-Santiago_Mejia_Suarez.pdf" data-section="header"
+                data-value="englishCv">English CV</a>
             </li>
           </ul>
 
@@ -270,7 +273,7 @@
 
     <!-----------------------------------------------------Sección Proyectos----------------------------------------------------->
     <section id="projects">
-      <h2>Proyectos Destacados</h2>
+      <h2 data-section="projects" data-value="title">Proyectos Destacados</h2>
 
 
       <div id="carouselExampleCaptions" class="carousel slide projects-carousel" data-bs-ride="carousel"
@@ -294,8 +297,8 @@
             <img src="./assets/images/projects/caficultor-vr/portafa_caficultorVR.jpg" class="d-block w-100"
               alt="Modelo 3D Realista Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Caficultor VR</h5>
-              <p>Experiencia educativa en realidad virtual para Meta Quest que enseña el proceso del café mediante
+              <h5 data-section="projects" data-value="caficultorTitle">Caficultor VR</h5>
+              <p data-section="projects" data-value="caficultorText">Experiencia educativa en realidad virtual para Meta Quest que enseña el proceso del café mediante
                 interacciones inmersivas en Unity.</p>
             </div>
           </div>
@@ -303,8 +306,8 @@
             <img src="./assets/images/projects/copiaBancoDeOccidente.jpg" class="d-block w-100"
               alt="Copia Banco de Occidente Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Copia Banco de Occidente</h5>
-              <p>Aplicación web con autenticación de usuarios, registro seguro y gestión de sesiones utilizando Node.js,
+              <h5 data-section="projects" data-value="bankTitle">Copia Banco de Occidente</h5>
+              <p data-section="projects" data-value="bankText">Aplicación web con autenticación de usuarios, registro seguro y gestión de sesiones utilizando Node.js,
                 MySQL y bcrypt.</p>
             </div>
           </div>
@@ -312,8 +315,8 @@
             <img src="./assets/images/projects/Objeto_realista/General-1.jpg" class="d-block w-100"
               alt="Modelo 3D Realista Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Modelo 3D Realista</h5>
-              <p>Modelado, texturización y renderizado de una PC gamer realista utilizando Blender, Substance 3D Painter
+              <h5 data-section="projects" data-value="modelTitle">Modelo 3D Realista</h5>
+              <p data-section="projects" data-value="modelText">Modelado, texturización y renderizado de una PC gamer realista utilizando Blender, Substance 3D Painter
                 y Cycles.</p>
             </div>
           </div>
@@ -321,8 +324,8 @@
             <img src="./assets/images/projects/Fanta_blast/key_visual.jpg" class="d-block w-100"
               alt="Modelo 3D Realista Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Fanta blast</h5>
-              <p>Proyecto de branding que incluyó la creación de identidad visual, piezas gráficas y un spot
+              <h5 data-section="projects" data-value="fantaTitle">Fanta blast</h5>
+              <p data-section="projects" data-value="fantaText">Proyecto de branding que incluyó la creación de identidad visual, piezas gráficas y un spot
                 publicitario para una marca conceptual.</p>
             </div>
           </div>
@@ -330,8 +333,8 @@
             <img src="./assets/images/projects/resident_evil/portada_resident_evil.jpg" class="d-block w-100"
               alt="Modelo 3D Realista Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Resident Evil</h5>
-              <p>Videojuego 3D inspirado en Resident Evil con IA de enemigos, puzzles y mecánicas clásicas desarrollado
+              <h5 data-section="projects" data-value="residentTitle">Resident Evil</h5>
+              <p data-section="projects" data-value="residentText">Videojuego 3D inspirado en Resident Evil con IA de enemigos, puzzles y mecánicas clásicas desarrollado
                 en Unity.</p>
             </div>
           </div>
@@ -339,8 +342,8 @@
             <img src="./assets/images/projects/molassault/inicioWebMollasault.jpg" class="d-block w-100"
               alt="Mollasault Project">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Mollasault and web site</h5>
-              <p>Videojuego narrativo y plataforma web tipo bitácora desarrollados en Nebuly Studios con Unity,
+              <h5 data-section="projects" data-value="molassaultTitle">Mollasault and web site</h5>
+              <p data-section="projects" data-value="molassaultText">Videojuego narrativo y plataforma web tipo bitácora desarrollados en Nebuly Studios con Unity,
                 desarrollo web y herramientas de IA.</p>
             </div>
           </div>
@@ -348,12 +351,12 @@
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden" data-section="projects" data-value="previous">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden" data-section="projects" data-value="next">Next</span>
         </button>
       </div>
     </section>
@@ -368,12 +371,12 @@
       <div class="about-container">
 
         <div class="about-title">
-          <h2>Sobre Mí</h2>
+          <h2 data-section="about" data-value="title">Sobre Mí</h2>
         </div>
 
         <div class="about-info">
 
-          <p>
+          <p data-section="about" data-value="text">
             Apasionado por el desarrollo de experiencias digitales interactivas, con enfoque en tecnologías XR (Realidad
             Aumentada, Virtual y Mixta), diseño interactivo y desarrollo de videojuegos. He trabajado en proyectos de
             realidad virtual, desarrollo web, desarrollo de videojuegos y producción multimedia, combinando creatividad
@@ -389,12 +392,12 @@
 
           <div class="education">
 
-            <h4>🎓 Educación</h4>
+            <h4 data-section="about" data-value="educationTitle">🎓 Educación</h4>
 
             <div class="card" style="width: 18rem;">
               <img src="./assets/images/profile/UAOEducation.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Universidad Autónoma de Occidente
+                <p class="card-text" data-section="about" data-value="educationText">Universidad Autónoma de Occidente
                   Ingeniería Multimedia
                   2023 - Actualidad</p>
               </div>
@@ -404,12 +407,12 @@
 
           <div class="experience">
 
-            <h4>💼 Experiencia</h4>
+            <h4 data-section="about" data-value="experienceTitle">💼 Experiencia</h4>
 
             <div class="card" style="width: 18rem;">
               <img src="./assets/images/profile/experience.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Nebuly Studios<br>
+                <p class="card-text" data-section="about" data-value="experienceText">Nebuly Studios<br>
                   Desarrollo XR<br>
                   Videojuegos<br>
                   Desarrollo Web</p>
@@ -420,12 +423,12 @@
 
           <div class="interesting">
 
-            <h4>🚀 Intereses</h4>
+            <h4 data-section="about" data-value="interestsTitle">🚀 Intereses</h4>
 
             <div class="card" style="width: 18rem;">
               <img src="./assets/images/profile/intereses.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Realidad Virtual<br>
+                <p class="card-text" data-section="about" data-value="interestsText">Realidad Virtual<br>
                   Videojuegos<br>
                   UX/UI<br>
                   Inteligencia Artificial<br>
@@ -449,12 +452,12 @@
     <!-----------------------------------------------------Sección Habilidades----------------------------------------------------->
     <section id="skills">
 
-      <h2>Habilidades</h2>
+      <h2 data-section="skills" data-value="title">Habilidades</h2>
 
       <div class="skills-orbit">
 
         <div class="skill-node Diseno">
-          <h4>Diseño - UX/UI</h4>
+          <h4 data-section="skills" data-value="designTitle">Diseño - UX/UI</h4>
 
           <div class="icons">
             <div class="icon">
@@ -468,11 +471,11 @@
             </div>
           </div>
 
-          <p>Wireframes · Journey Maps · Usabilidad · Design Thinking</p>
+          <p data-section="skills" data-value="designText">Wireframes · Journey Maps · Usabilidad · Design Thinking</p>
         </div>
 
         <div class="skill-node Contenido">
-          <h4>Contenido Multimedia</h4>
+          <h4 data-section="skills" data-value="contentTitle">Contenido Multimedia</h4>
 
           <div class="icons">
             <div class="icon">
@@ -483,11 +486,11 @@
             </div>
           </div>
 
-          <p>Edición de Video · Motion Graphics · Storytelling · Branding Visual</p>
+          <p data-section="skills" data-value="contentText">Edición de Video · Motion Graphics · Storytelling · Branding Visual</p>
         </div>
 
         <div class="skill-node Desarrollo">
-          <h4>XR & Desarrollo Interactivo</h4>
+          <h4 data-section="skills" data-value="interactiveTitle">XR & Desarrollo Interactivo</h4>
 
           <div class="icons">
             <div class="icon">
@@ -507,11 +510,11 @@
             </div>
           </div>
 
-          <p>VR · AR · XR Toolkit · Game Development</p>
+          <p data-section="skills" data-value="interactiveText">VR · AR · XR Toolkit · Game Development</p>
         </div>
 
         <div class="skill-node WEB">
-          <h4>Desarrollo Web</h4>
+          <h4 data-section="skills" data-value="webTitle">Desarrollo Web</h4>
 
           <div class="icons">
             <div class="icon">
@@ -531,11 +534,11 @@
             </div>
           </div>
 
-          <p>Frontend · Responsive Design · Node.js</p>
+          <p data-section="skills" data-value="webText">Frontend · Responsive Design · Node.js</p>
         </div>
 
         <div class="skill-node  BD">
-          <h4>Bases de Datos & Backend</h4>
+          <h4 data-section="skills" data-value="backendTitle">Bases de Datos & Backend</h4>
 
           <div class="icons">
             <div class="icon">
@@ -546,11 +549,11 @@
             </div>
           </div>
 
-          <p>CRUD · Autenticación · Modelado de Datos</p>
+          <p data-section="skills" data-value="backendText">CRUD · Autenticación · Modelado de Datos</p>
         </div>
 
         <div class="skill-node Herramientas">
-          <h4>Herramientas & Colaboración</h4>
+          <h4 data-section="skills" data-value="toolsTitle">Herramientas & Colaboración</h4>
 
 
           <div class="icons">
@@ -565,12 +568,12 @@
             </div>
           </div>
 
-          <p>Git · Scrum · Notion · Trabajo Colaborativo</p>
+          <p data-section="skills" data-value="toolsText">Git · Scrum · Notion · Trabajo Colaborativo</p>
         </div>
 
         <div class="skill-center">
-          <h3>Santiago</h3>
-          <p>Ingeniero Multimedia</p>
+          <h3 data-section="skills" data-value="centerName">Santiago</h3>
+          <p data-section="skills" data-value="centerRole">Ingeniero Multimedia</p>
         </div>
 
       </div>
@@ -586,14 +589,14 @@
 
       <div class="contact-container">
 
-        <h2>Contacto</h2>
+        <h2 data-section="contact" data-value="title">Contacto</h2>
 
-        <p>Ingeniero multimedia apasionado por crear experiencias digitales disruptivas, funcionales y memorables. <br>
+        <p data-section="contact" data-value="text">Ingeniero multimedia apasionado por crear experiencias digitales disruptivas, funcionales y memorables. <br>
           Estoy listo para transformar <span class="resalt-text">ideas</span> en <span class="resalt-text">productos
             reales</span></p>
 
         <a class="btn-writeme" href="https://wa.me/573332403407" target="_blank">
-          Escríbeme
+          <span data-section="contact" data-value="button">Escríbeme</span>
         </a>
 
         <div class="contact-cards-panel">
@@ -605,8 +608,8 @@
 
               <img src="./assets/images/icons/gmailIcono.png" alt="Icono de correo" />
               <div class="info-contact-card">
-                <h4>Correo</h4>
-                <p>mejiasantiago0604@gmail.com</p>
+                <h4 data-section="contact" data-value="emailTitle">Correo</h4>
+                <p data-section="contact" data-value="emailText">mejiasantiago0604@gmail.com</p>
               </div>
 
             </a>
@@ -620,8 +623,8 @@
               <img src="./assets/images/icons/whatsappIcono.png" alt="Icono de whatsApp" />
 
               <div class="info-contact-card">
-                <h4>WhatsApp</h4>
-                <p>+57 333 2403 407</p>
+                <h4 data-section="contact" data-value="whatsappTitle">WhatsApp</h4>
+                <p data-section="contact" data-value="whatsappText">+57 333 2403 407</p>
               </div>
 
 
@@ -635,8 +638,8 @@
 
               <img src="./assets/images/icons/linkedinIcono.png" alt="Icono de linkedIn" />
               <div class="info-contact-card">
-                <h4>Linkedin</h4>
-                <p>Santiago Mejía</p>
+                <h4 data-section="contact" data-value="linkedinTitle">Linkedin</h4>
+                <p data-section="contact" data-value="linkedinText">Santiago Mejía</p>
               </div>
 
 
@@ -656,16 +659,18 @@
       ACÁ ESTÁ EL FOOTER DEL PORTAFOLIO, INCLUYENDO INFORMACIÓN DE COPYRIGHT, ENLACES A REDES SOCIALES, EMAIL Y UBICACIÓN.
       //-->
   <footer>
-    <p>
+    <p data-section="footer" data-value="copyright">
       Copyright &copy; 2023 Santiago Mejía Suárez. Todos los derechos
       reservados.
     </p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank" rel="noopener noreferrer"
+        data-section="footer" data-value="linkedin">LinkedIn</a>
+      <a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer" data-section="footer"
+        data-value="github">GitHub</a>
     </div>
-    <p>Email: mejiasantiago0604@gmail.com</p>
-    <p>Ubicación: Cali, Colombia</p>
+    <p data-section="footer" data-value="email">Email: mejiasantiago0604@gmail.com</p>
+    <p data-section="footer" data-value="location">Ubicación: Cali, Colombia</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
