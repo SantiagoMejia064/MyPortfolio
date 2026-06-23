@@ -4,6 +4,10 @@ const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('header-nav-links');
 const links = navLinks.querySelectorAll('a');
 
+const langbtns = document.querySelectorAll("[data-language]");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+
 menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     if(navLinks.classList.contains('active')){
@@ -22,6 +26,23 @@ links.forEach(link => {
         menuBtn.setAttribute('aria-expanded', 'false')
     })
 });
+
+
+langbtns.forEach((button) => {
+    button.addEventListener("click", () =>{
+        fetch(`../src/data/${button.dataset.language}.json`)
+            .then(res => res.json())
+            .then(data => {
+                textsToChange.forEach((el) =>{
+                    const section = el.dataset.section;
+                    const value = el.dataset.value;
+
+                    el.innerHTML = data[section][value];
+                })
+            })
+    })
+})
+
 
 window.addEventListener("scroll",() => {
 

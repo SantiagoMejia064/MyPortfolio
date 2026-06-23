@@ -1,0 +1,16 @@
+{
+    "header":{
+        "hero" : "Hero",
+        "projects" : "Projects",
+        "about" : "About me",
+        "skills" : "Skills",
+        "contact" : "Contact"
+    },
+
+    "hero":{
+        "title": "MULTIMEDIA ENGINEER",
+        "name": "Santiago Mejía Suárez",
+        "text": "Hi, I'm Santiago Mejía Suárez, a multimedia engineer who is passionate about technology and design.",
+        "button": "Contact"
+    }
+}

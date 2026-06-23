@@ -44,7 +44,7 @@ header {
     border-radius: 0;
     display: grid;
     position: relative;
-    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    grid-template-columns: auto minmax(0, 1fr) auto auto auto;
     justify-content: space-between;
     align-items: center;
     padding: clamp(12px, 1.5vw, 20px);
@@ -60,6 +60,19 @@ header.scrolled .header-nav-container {
     background-color: var(--bg-primary-transparent);
     box-shadow: 0 8px 10px #2564eb2f;
     border-radius: 50px;
+}
+
+.languages {
+    display: flex;
+    gap: .5rem;
+}
+
+.langbtn {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.25rem;
+    border: 0;
+    cursor: pointer;
 }
 
 .header-logo {
@@ -243,7 +256,7 @@ header.scrolled .header-nav-container {
     align-self: flex-end;
 }
 
-.hero-image img{
+.hero-image img {
     filter:
         drop-shadow(0 0 30px #0e726a);
 }
@@ -272,7 +285,7 @@ header.scrolled .header-nav-container {
     padding-right: var(--carousel-gap);
     box-sizing: border-box;
     animation: spin 20s linear infinite;
-    
+
 }
 
 .card-hero {
@@ -707,7 +720,7 @@ footer {
 
 @media (max-width: 1200px) {
     .header-nav-container {
-        grid-template-columns: auto minmax(0, 1fr) auto auto;
+        grid-template-columns: auto minmax(0, 1fr) auto auto auto;
     }
 
     .header-social-links {
@@ -746,7 +759,7 @@ footer {
     }
 
     .header-nav-container {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
         justify-content: space-between;
     }
 

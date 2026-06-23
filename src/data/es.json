@@ -1,0 +1,16 @@
+{
+    "header":{
+        "hero" : "Inicio",
+        "projects" : "Proyectos",
+        "about" : "Sobre Mí",
+        "skills" : "Habilidades",
+        "contact" : "Contacto"
+    },
+
+    "hero":{
+        "title": "INGENIERO MULTIMEDIA",
+        "name": "Santiago Mejía Suárez",
+        "text": "Hola, soy Santiago Mejía Suárez, un ingeniero multimedia apasionado por la tecnología y el diseño.",
+        "button": "Contacto"
+    }
+}

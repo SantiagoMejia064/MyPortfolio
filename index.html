@@ -48,20 +48,20 @@
         </div>
 
         <ul class="header-nav-links" id="header-nav-links">
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#about">Sobre Mí</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contacto</a></li>
-          <li class="header-mobile-social-link"><a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#hero" data-section="header" data-value="hero">Inicio</a></li>
+          <li><a href="#projects" data-section="header" data-value="projects">Proyectos</a></li>
+          <li><a href="#about" data-section="header" data-value="about">Sobre Mí</a></li>
+          <li><a href="#skills" data-section="header" data-value="skills">Habilidades</a></li>
+          <li><a href="#contact" data-section="header" data-value="contact">Contacto</a></li>
+          <li class="header-mobile-social-link"><a href="https://www.linkedin.com/in/santiago-mejiasuarez/"
+              target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li class="header-mobile-social-link"><a href="https://github.com/SantiagoMejia064" target="_blank"
-            rel="noopener noreferrer">GitHub</a></li>
+              rel="noopener noreferrer">GitHub</a></li>
         </ul>
 
         <ul class="header-social-links">
           <li><a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a></li>
+              rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
         <!--
@@ -74,6 +74,10 @@
           </a>
           -->
 
+        <div class="languages">
+          <button class="langbtn" data-language="es">🇪🇸</button>
+          <button class="langbtn" data-language="en">🇺🇸</button>
+        </div>
         <div class="dropdown">
           <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
@@ -112,14 +116,14 @@
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <h1>INGENIERO MULTIMEDIA</h1>
-          <h3>Santiago Mejía Suárez</h3>
-          <p>
+          <h1 data-section="hero" data-value="title">INGENIERO MULTIMEDIA</h1>
+          <h3 data-section="hero" data-value="name">Santiago Mejía Suárez</h3>
+          <p data-section="hero" data-value="text">
             Hola, soy Santiago Mejía Suárez, un ingeniero multimedia
             apasionado por la tecnología y el diseño.
           </p>
 
-          <a href="#contact" class="btn-contacto">Contacto</a>
+          <a href="#contact" class="btn-contacto" data-section="hero" data-value="button">Contacto</a>
         </div>
 
         <div class="hero-image">
