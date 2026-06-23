@@ -243,6 +243,13 @@ header.scrolled .header-nav-container {
     align-self: flex-end;
 }
 
+.hero-image img{
+    filter:
+        drop-shadow(0 0 5px #2563EB)
+        drop-shadow(0 0 15px #2563EB)
+        drop-shadow(0 0 60px #0e726a);
+}
+
 .carousel-hero {
     --carousel-gap: 20px;
     display: flex;
@@ -267,6 +274,7 @@ header.scrolled .header-nav-container {
     padding-right: var(--carousel-gap);
     box-sizing: border-box;
     animation: spin 20s linear infinite;
+    
 }
 
 .card-hero {
