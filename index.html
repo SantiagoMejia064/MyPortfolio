@@ -47,19 +47,19 @@
           </a>
         </div>
 
-        <div class="header-nav-links">
-          <a href="#hero">Inicio</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#about">Sobre Mí</a>
-          <a href="#skills">Habilidades</a>
-          <a href="#contact">Contacto</a>
-        </div>
+        <ul class="header-nav-links" id="header-nav-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
 
-        <div class="header-social-links">
-          <a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/SantiagoMejia064" target="_blank"
-            rel="noopener noreferrer">GitHub</a>
-        </div>
+        <ul class="header-social-links">
+          <li><a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
         <!--
           <a
             href="./assets/documents/HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf"
@@ -87,7 +87,9 @@
                 download="Resume-Santiago_Mejia_Suarez.pdf">English CV</a>
             </li>
           </ul>
+
         </div>
+        <button class="menu-btn" id="menu-btn">☰</button>
       </div>
     </nav>
   </header>
@@ -183,6 +185,9 @@
           <div class="card-hero">
             <img src="./assets/images/icons/figmaIcon.png" alt="Figma Icon" />
           </div>
+          <div class="card-hero">
+            <img src="./assets/images/icons/ARcoreIcon.png" alt="AR Core Icon" />
+          </div>
         </div>
 
 
@@ -247,6 +252,9 @@
           </div>
           <div class="card-hero">
             <img src="./assets/images/icons/figmaIcon.png" alt="Figma Icon" />
+          </div>
+          <div class="card-hero">
+            <img src="./assets/images/icons/ARcoreIcon.png" alt="AR Core Icon" />
           </div>
         </div>
     </section>
@@ -347,11 +355,82 @@
 
     <!-----------------------------------------------------Sección Sobre Mí----------------------------------------------------->
     <section id="about">
-      <h2>Sobre Mí</h2>
-      <p>
-        Soy Santiago Mejía Suárez, un ingeniero multimedia con experiencia en
-        el desarrollo de soluciones digitales innovadoras.
-      </p>
+
+      <div class="about-container">
+
+        <div class="about-title">
+          <h2>Sobre Mí</h2>
+        </div>
+
+        <div class="about-info">
+
+          <p>
+            Apasionado por el desarrollo de experiencias digitales interactivas, con enfoque en tecnologías XR (Realidad
+            Aumentada, Virtual y Mixta), diseño interactivo y desarrollo de videojuegos. He trabajado en proyectos de
+            realidad virtual, desarrollo web, desarrollo de videojuegos y producción multimedia, combinando creatividad
+            y tecnología para crear soluciones innovadoras.
+
+            Tengo experiencia en el desarrollo de aplicaciones en Unity, diseño de interfaces UI/UX con Figma, modelado
+            y animación 3D, desarrollo web y uso de la suite Adobe. Me enfoco en construir experiencias inmersivas
+            centradas en el usuario, priorizando la usabilidad, la estética y la funcionalidad.
+          </p>
+        </div>
+
+        <div class="about-cards">
+
+          <div>
+
+            <h4>🎓 Educación</h4>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/profile/UAOEducation.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Universidad Autónoma de Occidente
+                  Ingeniería Multimedia
+                  2023 - Actualidad</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+
+            <h4>💼 Experiencia</h4>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/profile/experience.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Nebuly Studios<br>
+                  Desarrollo XR<br>
+                  Videojuegos<br>
+                  Desarrollo Web</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+
+            <h4>🚀 Intereses</h4>
+
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/profile/intereses.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Realidad Virtual<br>
+                  Videojuegos<br>
+                  UX/UI<br>
+                  Inteligencia Artificial<br>
+                  Desarrollo Web</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
     </section>
 
 
@@ -409,6 +488,9 @@
               <img src="./assets/images/icons/CsharpIcon.png" alt="C# Icon" />
             </div>
             <div class="icon">
+              <img src="./assets/images/icons/ARcoreIcon.png" alt="AR Core Icon" />
+            </div>
+            <div class="icon">
               <img src="./assets/images/icons/blenderIcon.png" alt="Blender Icon" />
             </div>
             <div class="icon">
@@ -421,7 +503,7 @@
 
         <div class="skill-node WEB">
           <h4>Desarrollo Web</h4>
-          
+
           <div class="icons">
             <div class="icon">
               <img src="./assets/images/icons/htmlIcon.png" alt="HTML Icon" />
