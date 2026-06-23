@@ -350,6 +350,12 @@ header.scrolled .header-nav-container {
     border-radius: 10px;
 }
 
+.project-slide-link {
+    display: inline-block;
+    margin: 12px 0 0;
+    padding: 10px 24px;
+}
+
 .d-block {
     width: 100%;
     height: clamp(280px, 42vw, 500px);

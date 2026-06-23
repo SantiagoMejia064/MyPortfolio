@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detalle del proyecto Banco de Occidente de Santiago Mejía Suárez." />
+  <title>Banco de Occidente | Santiago Mejía Suárez</title>
+  <link rel="icon" type="image/png" href="../assets/images/icons/SLogo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/variables.css" />
+  <link rel="stylesheet" href="../src/css/globals.css" />
+  <link rel="stylesheet" href="../src/css/main.css" />
+  <link rel="stylesheet" href="../src/css/project-detail.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="header-nav-container">
+        <div class="header-logo"><a href="../index.html#hero"><img src="../assets/images/icons/myLogoLight.png"
+              alt="Logo de Santiago Mejía Suárez" /></a></div>
+        <ul class="header-nav-links" id="header-nav-links">
+          <li><a href="../index.html#hero" data-section="header" data-value="hero">Inicio</a></li>
+          <li><a href="../index.html#projects" data-section="header" data-value="projects">Proyectos</a></li>
+          <li><a href="../index.html#about" data-section="header" data-value="about">Sobre Mí</a></li>
+          <li><a href="../index.html#skills" data-section="header" data-value="skills">Habilidades</a></li>
+          <li><a href="../index.html#contact" data-section="header" data-value="contact">Contacto</a></li>
+          <li class="header-mobile-social-link"><a href="https://www.linkedin.com/in/santiago-mejiasuarez/"
+              target="_blank" rel="noopener noreferrer" data-section="header" data-value="linkedin">LinkedIn</a></li>
+          <li class="header-mobile-social-link"><a href="https://github.com/SantiagoMejia064" target="_blank"
+              rel="noopener noreferrer" data-section="header" data-value="github">GitHub</a></li>
+        </ul>
+        <ul class="header-social-links">
+          <li><a href="https://www.linkedin.com/in/santiago-mejiasuarez/" target="_blank" rel="noopener noreferrer"
+              data-section="header" data-value="linkedin">LinkedIn</a></li>
+          <li><a href="https://github.com/SantiagoMejia064" target="_blank" rel="noopener noreferrer"
+              data-section="header" data-value="github">GitHub</a></li>
+        </ul>
+        <div class="languages"><button class="langbtn" data-language="es">🇪🇸</button><button class="langbtn"
+            data-language="en">🇺🇸</button></div>
+        <div class="dropdown"><a class="btn btn-primary dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/icons/documentoIcono.png"
+              alt="Documento" /><span data-section="header" data-value="cv">CV</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../assets/documents/HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf"
+                download="HOJA_DE_VIDA-SANTIAGO_MEJIA_SUAREZ.pdf" data-section="header" data-value="spanishCv">CV en
+                español</a></li>
+            <li><a class="dropdown-item" href="../assets/documents/Resume-Santiago_Mejia_Suarez.pdf"
+                download="Resume-Santiago_Mejia_Suarez.pdf" data-section="header" data-value="englishCv">English CV</a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <section class="project-detail-hero">
+      <div class="project-detail-hero-content">
+        <span class="project-eyebrow" data-section="bankPage" data-value="eyebrow">Proyecto full stack</span>
+        <h1 data-section="bankPage" data-value="title">Banco de Occidente</h1>
+        <p data-section="bankPage" data-value="summary">Clon funcional con autenticación, sesiones, bcrypt, Node.js y
+          MySQL.</p>
+        <div class="project-detail-meta"><span class="project-pill" data-section="bankPage"
+            data-value="year">2025</span><span class="project-pill" data-section="bankPage" data-value="role">Frontend &
+            Backend</span></div>
+      </div>
+      <div class="project-detail-cover"><img src="../assets/images/projects/banco_de_occidente/copiaBancoDeOccidente.jpg"
+          alt="Banco de Occidente" /></div>
+    </section>
+    <section class="project-detail-section">
+      <div class="project-detail-inner project-detail-grid">
+        <article class="project-card featured"><span class="project-section-label" data-section="projectCommon"
+            data-value="overview">Descripción General</span>
+          <h2 data-section="bankPage" data-value="overviewTitle">Autenticación funcional</h2>
+          <p data-section="bankPage" data-value="overviewText">Proyecto full stack que replica funcionalidades básicas
+            del portal Banco de Occidente: registro, inicio de sesión, cierre de sesión, cifrado de contraseñas y
+            persistencia en MySQL.</p>
+        </article>
+        <article class="project-card"><span class="project-section-label" data-section="projectCommon"
+            data-value="role">Mi Rol</span>
+          <h2 data-section="bankPage" data-value="roleTitle">Integración frontend-backend</h2>
+          <p data-section="bankPage" data-value="roleText">Desarrollé la lógica de autenticación, conexión a base de
+            datos, manejo de sesiones y estructura visual basada en el portal original.</p>
+        </article>
+      </div>
+    </section>
+    <section class="project-detail-section">
+      <div class="project-detail-inner">
+        <h2 data-section="projectCommon" data-value="technologies">Tecnologías Utilizadas</h2>
+        <div class="project-tech-list"><span class="project-tech-badge">HTML</span><span
+            class="project-tech-badge">CSS</span><span class="project-tech-badge">JavaScript</span><span
+            class="project-tech-badge">Node.js</span><span class="project-tech-badge">MySQL</span><span
+            class="project-tech-badge">bcrypt</span><span class="project-tech-badge">XAMPP</span></div>
+      </div>
+    </section>
+    <section class="project-detail-section">
+      <div class="project-detail-inner project-detail-grid">
+        <article class="project-card">
+          <h2 data-section="projectCommon" data-value="contributions">Contribuciones Principales</h2>
+          <ul class="project-list">
+            <li data-section="bankPage" data-value="contribution1">Registro de usuarios.</li>
+            <li data-section="bankPage" data-value="contribution2">Inicio y cierre de sesión.</li>
+            <li data-section="bankPage" data-value="contribution3">Contraseñas cifradas con bcrypt.</li>
+            <li data-section="bankPage" data-value="contribution4">Backend en Node.js conectado a MySQL.</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h2 data-section="projectCommon" data-value="results">Resultados y Aprendizajes</h2>
+          <ul class="project-list">
+            <li data-section="bankPage" data-value="result1">Autenticación y gestión de usuarios.</li>
+            <li data-section="bankPage" data-value="result2">Seguridad básica y hashing de contraseñas.</li>
+            <li data-section="bankPage" data-value="result3">Integración frontend-backend en entorno local.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="project-detail-section">
+      <div class="project-detail-inner">
+        <h2 data-section="projectCommon" data-value="gallery">Galería</h2>
+        <div class="project-gallery-grid">
+          <div class="project-gallery-item"><img
+              src="../assets/images/projects/banco_de_occidente/copiaBancoDeOccidente.jpg"
+              alt="Banco de Occidente" /><span data-section="bankPage" data-value="gallery1">Vista principal del clon
+              funcional.</span></div>
+          <div class="project-gallery-item"><img src="../assets/images/projects/banco_de_occidente/logs_terminal.jpg"
+              alt="Banco de Occidente" /><span data-section="bankPage" data-value="gallery2">logs de la terminal del
+              proyecto</span></div>
+          <div class="project-gallery-item"><img src="../assets/images/projects/banco_de_occidente/Inicio_de_sesion.png"
+              alt="Banco de Occidente" /><span data-section="bankPage" data-value="gallery3">Pantalla de inicio de
+              sesión</span></div>
+          <div class="project-gallery-item"><img src="../assets/images/projects/banco_de_occidente/registro.png"
+              alt="Banco de Occidente" /><span data-section="bankPage" data-value="gallery4">Pantalla de registro</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="project-detail-section">
+      <div class="project-detail-inner">
+        <h2 data-section="projectCommon" data-value="video">Video</h2>
+        <iframe class="project-video-frame" src="https://www.youtube.com/embed/7ikZl6xfQds" title="Clon banco de occidente" 
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <nav class="project-navigation"><a class="project-nav-link" href="./molassault.html" data-section="projectCommon"
+        data-value="previousProject">Proyecto anterior</a><a class="project-nav-link" href="./fanta-blast.html"
+        data-section="projectCommon" data-value="nextProject">Siguiente proyecto</a></nav>
+  </main>
+  <script src="../src/js/bootstrap-init.js"></script>
+  <script src="../src/js/main.js"></script>
+</body>
+
+</html>
