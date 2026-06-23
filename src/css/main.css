@@ -955,6 +955,20 @@ footer {
     .contact-card {
         margin-inline: 0;
     }
+
+    .carousel-caption p{
+        display: none;
+    }
+
+    .carousel-caption{
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .project-slide-link{
+        margin: 6px 0 0;
+        padding: 2.4px 6px;
+    }
 }
 
 @media (max-width: 576px) {
